@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="results.html" method="GET">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="username" required>
@@ -73,11 +73,23 @@
             <label for="bio">Bio</label>
             <textarea id="bio" name="bio"></textarea>
         </div>
+        <br>
+
+        <div>
+            <input type="hidden" name="hidden" value="hi">
+        </div>
+        
+        <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+        </div>
+        <br>
 
         <div>
             <label>Password</label>
             <input type="password" name="password" required>
         </div>
+        <br>
 
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
