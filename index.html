@@ -11,15 +11,30 @@
 <body>
     <form action="results.html" method="GET">
         <div>
-            <label>Name</label>
-            <input>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username" required>
         </div>
+        <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <br>
+
         <div>
             <label>Password</label>
-            <input>
+            <input type="password" name="password" required>
         </div>
 
-        <button>Submit</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 
